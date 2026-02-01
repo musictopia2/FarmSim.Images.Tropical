@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
+    <FeedType>Public</FeedType>
+  </PropertyGroup>
+	<Target Name="RunImageEmbedder" BeforeTargets="BeforeBuild">
+		<Exec Command="where PngImageStaticWebAsset" IgnoreExitCode="true">
+			<Output TaskParameter="ExitCode" PropertyName="_HasToolExitCode" />
+		</Exec>
+		<Exec Condition="'$(_HasToolExitCode)' == '0'" Command="PngImageStaticWebAsset $(ProjectName) $(ProjectDir) $(ProjectFileName)" ContinueOnError="true" />
+	</Target>
+	<ItemGroup>
+		<PackageReference Include="CommonBasicLibraries" Version="10.0.16" />
+	</ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="C:\VS\OneNet\Apps\CommandLines\PostBuildPackageHandler\bin\Release\net10.0\PostBuildPackageHandler.exe $(ProjectName) $(ProjectDir) $(ProjectFileName) $(TargetDir)" Condition="'$(Configuration)' == 'Release' and '$(RunPostBuildAppCondition)' == 'true'" />
+  </Target>
+</Project>
