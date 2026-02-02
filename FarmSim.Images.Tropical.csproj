@@ -3,10 +3,15 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
+	  <PackageId>Musictopia.FarmSim.Images.Tropical</PackageId>
+	  <StaticWebAssetBasePath>_content/FarmSim.Images.Tropical</StaticWebAssetBasePath>
     <ImplicitUsings>enable</ImplicitUsings>
     <RunPostBuildAppCondition Condition="'$(Configuration)' == 'Release'">true</RunPostBuildAppCondition>
     <FeedType>Public</FeedType>
   </PropertyGroup>
+	<PropertyGroup>
+		<StaticWebAssetBasePath>_content/FarmSim.Images.Tropical</StaticWebAssetBasePath>
+	</PropertyGroup>
 	<Target Name="RunImageEmbedder" BeforeTargets="BeforeBuild">
 		<Exec Command="where PngImageStaticWebAsset" IgnoreExitCode="true">
 			<Output TaskParameter="ExitCode" PropertyName="_HasToolExitCode" />
