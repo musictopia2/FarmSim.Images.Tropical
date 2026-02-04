@@ -2,6 +2,7 @@
 namespace FarmSim.Images.Tropical.Assets;
 public static class PngImageAssets
 {
+    public const string ArtisanWorkshop = "ArtisanWorkshop";
     public const string Bakery = "Bakery";
     public const string BeachfrontGrill = "BeachfrontGrill";
     public const string BeachfrontKitchen = "BeachfrontKitchen";
@@ -13,8 +14,10 @@ public static class PngImageAssets
     public const string CocoaPod = "CocoaPod";
     public const string CocoaPowder = "CocoaPowder";
     public const string Coconut = "Coconut";
+    public const string CoconutOil = "CoconutOil";
     public const string CorelReef = "CorelReef";
     public const string Crab = "Crab";
+    public const string CrabBites = "CrabBites";
     public const string CrabRoll = "CrabRoll";
     public const string CraftWorkstation = "CraftWorkstation";
     public const string Dolphin = "Dolphin";
@@ -42,15 +45,20 @@ public static class PngImageAssets
     public const string Lobster = "Lobster";
     public const string LobsterRoll = "LobsterRoll";
     public const string Luna = "Luna";
+    public const string Mango = "Mango";
+    public const string MangoJuice = "MangoJuice";
+    public const string Mill = "Mill";
     public const string Mushroom = "Mushroom";
     public const string OrangeCrystal = "OrangeCrystal";
     public const string Orchid = "Orchid";
+    public const string OrchidPerfume = "OrchidPerfume";
     public const string PinaColada = "PinaColada";
     public const string Pineapple = "Pineapple";
     public const string PineappleSmoothie = "PineappleSmoothie";
     public const string PurpleCrystal = "PurpleCrystal";
     public const string Rice = "Rice";
     public const string ScentedCandle = "ScentedCandle";
+    public const string ScentedSoap = "ScentedSoap";
     public const string SearedFish = "SearedFish";
     public const string Seashell = "Seashell";
     public const string Silo = "Silo";
@@ -58,6 +66,8 @@ public static class PngImageAssets
     public const string SmugglersCave = "SmugglersCave";
     public const string SteamedRice = "SteamedRice";
     public const string Sugar = "Sugar";
+    public const string SugarCane = "SugarCane";
+    public const string SugarScrub = "SugarScrub";
     public const string SushiStand = "SushiStand";
     public const string Tapicoa = "Tapicoa";
     public const string Toby = "Toby";
@@ -66,6 +76,7 @@ public static class PngImageAssets
     public const string Zazu = "Zazu";
     public static void Register()
     {
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("ArtisanWorkshop", "/_content/FarmSim.Images.Tropical/ArtisanWorkshop.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Bakery", "/_content/FarmSim.Images.Tropical/Bakery.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("BeachfrontGrill", "/_content/FarmSim.Images.Tropical/BeachfrontGrill.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("BeachfrontKitchen", "/_content/FarmSim.Images.Tropical/BeachfrontKitchen.png");
@@ -77,8 +88,10 @@ public static class PngImageAssets
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CocoaPod", "/_content/FarmSim.Images.Tropical/CocoaPod.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CocoaPowder", "/_content/FarmSim.Images.Tropical/CocoaPowder.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Coconut", "/_content/FarmSim.Images.Tropical/Coconut.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CoconutOil", "/_content/FarmSim.Images.Tropical/CoconutOil.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CorelReef", "/_content/FarmSim.Images.Tropical/CorelReef.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Crab", "/_content/FarmSim.Images.Tropical/Crab.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CrabBites", "/_content/FarmSim.Images.Tropical/CrabBites.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CrabRoll", "/_content/FarmSim.Images.Tropical/CrabRoll.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("CraftWorkstation", "/_content/FarmSim.Images.Tropical/CraftWorkstation.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Dolphin", "/_content/FarmSim.Images.Tropical/Dolphin.png");
@@ -106,15 +119,20 @@ public static class PngImageAssets
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Lobster", "/_content/FarmSim.Images.Tropical/Lobster.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("LobsterRoll", "/_content/FarmSim.Images.Tropical/LobsterRoll.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Luna", "/_content/FarmSim.Images.Tropical/Luna.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Mango", "/_content/FarmSim.Images.Tropical/Mango.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("MangoJuice", "/_content/FarmSim.Images.Tropical/MangoJuice.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Mill", "/_content/FarmSim.Images.Tropical/Mill.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Mushroom", "/_content/FarmSim.Images.Tropical/Mushroom.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("OrangeCrystal", "/_content/FarmSim.Images.Tropical/OrangeCrystal.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Orchid", "/_content/FarmSim.Images.Tropical/Orchid.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("OrchidPerfume", "/_content/FarmSim.Images.Tropical/OrchidPerfume.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("PinaColada", "/_content/FarmSim.Images.Tropical/PinaColada.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Pineapple", "/_content/FarmSim.Images.Tropical/Pineapple.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("PineappleSmoothie", "/_content/FarmSim.Images.Tropical/PineappleSmoothie.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("PurpleCrystal", "/_content/FarmSim.Images.Tropical/PurpleCrystal.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Rice", "/_content/FarmSim.Images.Tropical/Rice.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("ScentedCandle", "/_content/FarmSim.Images.Tropical/ScentedCandle.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("ScentedSoap", "/_content/FarmSim.Images.Tropical/ScentedSoap.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("SearedFish", "/_content/FarmSim.Images.Tropical/SearedFish.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Seashell", "/_content/FarmSim.Images.Tropical/Seashell.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Silo", "/_content/FarmSim.Images.Tropical/Silo.png");
@@ -122,6 +140,8 @@ public static class PngImageAssets
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("SmugglersCave", "/_content/FarmSim.Images.Tropical/SmugglersCave.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("SteamedRice", "/_content/FarmSim.Images.Tropical/SteamedRice.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Sugar", "/_content/FarmSim.Images.Tropical/Sugar.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("SugarCane", "/_content/FarmSim.Images.Tropical/SugarCane.png");
+        CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("SugarScrub", "/_content/FarmSim.Images.Tropical/SugarScrub.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("SushiStand", "/_content/FarmSim.Images.Tropical/SushiStand.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Tapicoa", "/_content/FarmSim.Images.Tropical/Tapicoa.png");
         CommonBasicLibraries.AdvancedGeneralFunctionsAndProcesses.FileFunctions.FileContentRegistry.RegisterFile("Toby", "/_content/FarmSim.Images.Tropical/Toby.png");
